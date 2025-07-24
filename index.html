@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertifyPro - Professional Certificate Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="homePage" class="page active">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <div class="logo-icon">CP</div>
+                        <div class="logo-text">CertifyPro</div>
+                    </div>
+                    <button class="btn btn-primary" onclick="showPage('loginPage')">
+                        Admin Login
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text animate-fade-in">
+                        <h2>Professional <span class="highlight">Certificate Generator</span></h2>
+                        <p>Create beautiful, professional certificates for your courses and programs. Trusted by educational institutions worldwide.</p>
+                        <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+                            <span style="color: #059669; font-weight: 600;">✓ Secure & Verified</span>
+                            <span style="color: #059669; font-weight: 600;">✓ Instant Generation</span>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div>
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">🎓</div>
+                            <div>Professional Certificate Preview</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="text-center mb-8">
+                    <h3 style="font-size: 2rem; font-weight: 700; color: #111827; margin-bottom: 1rem;">Why Choose CertifyPro?</h3>
+                    <p style="color: #6b7280; max-width: 600px; margin: 0 auto;">Our platform combines cutting-edge technology with elegant design to deliver the most professional certificate generation experience.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Secure & Trusted</h4>
+                        <p style="color: #6b7280;">Industry-standard security with tamper-proof certificates</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Professional Design</h4>
+                        <p style="color: #6b7280;">Beautiful, customizable certificate templates</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Multi-Course Support</h4>
+                        <p style="color: #6b7280;">Support for various courses and specializations</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Instant Generation</h4>
+                        <p style="color: #6b7280;">Generate certificates in seconds with our advanced system</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); padding: 4rem 0; color: white;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+                    <div>
+                        <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">10,000+</div>
+                        <div style="opacity: 0.9;">Certificates Generated</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">500+</div>
+                        <div style="opacity: 0.9;">Educational Institutions</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">99.9%</div>
+                        <div style="opacity: 0.9;">Uptime Guarantee</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="background: #111827; color: white; padding: 2rem 0;">
+            <div class="container text-center">
+                <div class="logo mb-4">
+                    <div class="logo-icon" style="margin: 0 auto;">CP</div>
+                    <div class="logo-text" style="color: white; margin-top: 0.5rem;">CertifyPro</div>
+                </div>
+                <p style="color: #9ca3af;">© 2024 CertifyPro. All rights reserved. Trusted certificate generation platform.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Login Page -->
+    <div id="loginPage" class="page">
+        <div style="min-height: 100vh; background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%); display: flex; align-items: center; justify-content: center; padding: 1rem;">
+            <div style="width: 100%; max-width: 400px;">
+                <div class="text-center mb-6">
+                    <button class="btn btn-ghost mb-4" onclick="showPage('homePage')">
+                        ← Back to Home
+                    </button>
+                    <div class="logo">
+                        <div class="logo-icon" style="margin: 0 auto;">CP</div>
+                        <div class="logo-text mt-2">CertifyPro</div>
+                    </div>
+                </div>
+
+                <div class="card animate-fade-in">
+                    <div class="card-header text-center">
+                        <h2 class="card-title">Admin Login</h2>
+                        <p style="color: #6b7280;">Enter your credentials to access the certificate generator</p>
+                    </div>
+                    <div class="card-content">
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label class="form-label">Username</label>
+                                <input type="text" class="form-input" id="username" placeholder="Enter your username" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-input" id="password" placeholder="Enter your password" required>
+                            </div>
+                            <div id="loginError" style="color: #dc2626; margin-bottom: 1rem; display: none;"></div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; height: 48px;">
+                                <span id="loginBtnText">Sign In</span>
+                            </button>
+                        </form>
+                        <div class="text-center mt-4">
+                            <button onclick="showForgotPassword()" style="color: #3b82f6; background: none; border: none; text-decoration: underline; cursor: pointer;">
+                                Forgot Password?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-4" style="background: #dbeafe; border-color: #93c5fd;">
+                    <div class="card-content">
+                        <h3 style="color: #1e40af; margin-bottom: 0.5rem;">Demo Credentials</h3>
+                        <p style="color: #1e40af; font-size: 0.875rem;">
+                            Username: <code style="background: #bfdbfe; padding: 0.25rem 0.5rem; border-radius: 0.25rem;">admin</code><br>
+                            Password: <code style="background: #bfdbfe; padding: 0.25rem 0.5rem; border-radius: 0.25rem;">admin</code>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Generate Page -->
+    <div id="generatePage" class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <button class="btn btn-ghost" onclick="showPage('homePage')">
+                            ← Back
+                        </button>
+                        <div class="logo">
+                            <div class="logo-icon">CP</div>
+                            <div class="logo-text">CertifyPro</div>
+                        </div>
+                    </div>
+                    <div style="color: #6b7280; font-size: 0.875rem;">Admin Dashboard</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container" style="padding: 2rem 1rem;">
+            <!-- Welcome Section -->
+            <div class="text-center mb-8 animate-fade-in">
+                <h2 style="font-size: 2.5rem; font-weight: 700; color: #111827; margin-bottom: 1rem;">Generate Professional Certificates</h2>
+                <p style="font-size: 1.25rem; color: #6b7280; max-width: 600px; margin: 0 auto;">Create beautiful, secure certificates for your courses and programs with our advanced certificate generation system.</p>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="mb-8">
+                <h3 style="font-size: 1.875rem; font-weight: 700; color: #111827; text-align: center; margin-bottom: 2rem;">How It Works</h3>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Fill Details</h4>
+                        <p style="color: #6b7280;">Enter student information, course details, and organization name</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Customize</h4>
+                        <p style="color: #6b7280;">Choose course type and customize certificate appearance</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Generate</h4>
+                        <p style="color: #6b7280;">Create and download your professional certificate</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features and Courses -->
+            <div class="grid-2 mb-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Certificate Features</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem;">✓ Professional certificate templates</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Course-specific subcourse recognition</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Tamper-proof security features</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Instant generation and download</li>
+                            <li style="margin-bottom: 0.5rem;">✓ High-resolution print quality</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Multiple format support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Supported Courses</h3>
+                    </div>
+                    <div class="card-content">
+                        <div style="margin-bottom: 1rem; padding: 1rem; background: #dbeafe; border-radius: 0.5rem;">
+                            <h4 style="color: #1e40af; margin-bottom: 0.5rem;">Full Stack Web Development</h4>
+                            <p style="color: #1e40af; font-size: 0.875rem;">Includes HTML, CSS, JavaScript certifications</p>
+                        </div>
+                        <div style="margin-bottom: 1rem; padding: 1rem; background: #d1fae5; border-radius: 0.5rem;">
+                            <h4 style="color: #065f46; margin-bottom: 0.5rem;">Machine Learning</h4>
+                            <p style="color: #065f46; font-size: 0.875rem;">Advanced ML concepts and practical applications</p>
+                        </div>
+                        <div style="padding: 1rem; background: #e9d5ff; border-radius: 0.5rem;">
+                            <h4 style="color: #581c87; margin-bottom: 0.5rem;">Data Science</h4>
+                            <p style="color: #581c87; font-size: 0.875rem;">Comprehensive data analysis and visualization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Generate Button -->
+            <div class="text-center">
+                <button class="btn btn-primary" onclick="showModal('certificateModal')" style="padding: 1rem 3rem; font-size: 1.25rem; font-weight: 600;">
+                    Generate Certificate
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle" class="card-title">Generate Certificate</h2>
+            </div>
+            <div class="modal-body">
+                <div id="certificateForm">
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label class="form-label">👤 Student Name *</label>
+                            <input type="text" class="form-input" id="studentName" placeholder="Enter student's full name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">🏢 Organization Name *</label>
+                            <input type="text" class="form-input" id="organizationName" placeholder="Enter organization name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">🎓 Course Completed *</label>
+                        <select class="form-select" id="courseCompleted">
+                            <option value="">Select a course</option>
+                            <option value="FSN">Full Stack Web Development - HTML, CSS, JavaScript</option>
+                            <option value="ML">Machine Learning - Advanced ML concepts</option>
+                            <option value="DS">Data Science - Data analysis and visualization</option>
+                        </select>
+                    </div>
+                    <div id="courseInfo" style="display: none; background: #dbeafe; padding: 1rem; border-radius: 0.5rem; margin-top: 1rem;">
+                        <h4 style="color: #1e40af; margin-bottom: 0.5rem;">Course Details</h4>
+                        <p id="courseDescription" style="color: #1e40af; font-size: 0.875rem;"></p>
+                    </div>
+                </div>
+                <div id="certificateDisplay" style="display: none;">
+                    <div id="certificateContainer"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="hideModal('certificateModal')">Cancel</button>
+                <button id="generateBtn" class="btn btn-primary" onclick="generateCertificate()">📄 Generate Certificate</button>
+                <button id="printBtn" class="btn btn-primary" onclick="printCertificate()" style="display: none;">🖨️ Print Certificate</button>
+                <button id="newBtn" class="btn btn-secondary" onclick="resetForm()" style="display: none;">Generate Another</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
